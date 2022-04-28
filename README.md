@@ -38,7 +38,7 @@ Train 5 models with Dropout 0, 0.2, 0.4, 0.6 and 0.8 and out put the models and 
 
 The training process can be interrupted at any time, and the best checkpoint will always be saved.
 
-Generate (sample) some text from a trained model with the best result (Dropout 0) and output result in ./samples:(changed)
+Generate (sample) some text from a trained model with the best result (Dropout 0.4) and output result in ./samples:(changed)
 
     ./scripts/generate.sh
 
