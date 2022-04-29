@@ -1,4 +1,4 @@
- /bin/bash
+#! /bin/bash
 
 scripts=`dirname "$0"`
 base=$(realpath $scripts/..)
@@ -66,6 +66,5 @@ echo "$SECONDS seconds"
         --save $models/model_en_08.pt \
         > $models/evaluation_output_emma_08.txt
 )
-
 echo "time taken:"
 echo "$SECONDS seconds"
