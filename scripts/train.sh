@@ -1,4 +1,4 @@
-#! /bin/bash
+ /bin/bash
 
 scripts=`dirname "$0"`
 base=$(realpath $scripts/..)
@@ -19,7 +19,7 @@ SECONDS=0
         --epochs 40 \
         --log-interval 100 \
         --emsize 200 --nhid 200 --dropout 0 --tied \
-        --save $models/model_en_0.pt
+        --save $models/model_en_0.pt \
         > $models/evaluation_output_emma_0.txt
 )
 echo "time taken:"
@@ -30,7 +30,7 @@ echo "$SECONDS seconds"
         --epochs 40 \
         --log-interval 100 \
         --emsize 200 --nhid 200 --dropout 0.2 --tied \
-        --save $models/model_en_02.pt
+        --save $models/model_en_02.pt \
         > $models/evaluation_output_emma_02.txt
 )
 echo "time taken:"
@@ -41,7 +41,7 @@ echo "$SECONDS seconds"
         --epochs 40 \
         --log-interval 100 \
         --emsize 200 --nhid 200 --dropout 0.4 --tied \
-        --save $models/model_en_04.pt
+        --save $models/model_en_04.pt \
         > $models/evaluation_output_emma_04.txt
 )
 echo "time taken:"
@@ -52,7 +52,7 @@ echo "$SECONDS seconds"
         --epochs 40 \
         --log-interval 100 \
         --emsize 200 --nhid 200 --dropout 0.6 --tied \
-        --save $models/model_en_06.pt
+        --save $models/model_en_06.pt \
         > $models/evaluation_output_emma_06.txt
 )
 echo "time taken:"
@@ -63,7 +63,7 @@ echo "$SECONDS seconds"
         --epochs 40 \
         --log-interval 100 \
         --emsize 200 --nhid 200 --dropout 0.8 --tied \
-        --save $models/model_en_08.pt
+        --save $models/model_en_08.pt \
         > $models/evaluation_output_emma_08.txt
 )
 
