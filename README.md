@@ -12,7 +12,7 @@ This repo shows how to train neural language models using [Pytorch example code]
 
 # Steps
 
-Clone this repository in the desired place:(changed)
+Clone this repository in the desired place: (changed)
 	git clone https://github.com/yomogichan/mt-exercise-3
 	cd mt-exercise-3
 
@@ -20,7 +20,7 @@ Create a new virtualenv that uses Python 3. Please make sure to run this command
 
     ./scripts/make_virtualenv.sh
 
-**Important**: Then activate the env by executing the `source` command that is output by the shell script above(changed):
+**Important**: Then activate the env by executing the `source` command that is output by the shell script above (changed):
 
 	source venvs/torch3/bin/activate
 
@@ -32,13 +32,13 @@ Download and preprocess data. Here [Emma by Jane Austen](https://www.gutenberg.o
 
     ./scripts/download_data.sh
 
-Train 5 models with Dropout 0, 0.2, 0.4, 0.6 and 0.8 and out put the models and the data of training (.txt) in ./models:(changed)
+Train 5 models with Dropout 0, 0.2, 0.4, 0.6 and 0.8 and out put the models and the data of training (.txt) in ./models: (changed)
 
     ./scripts/train.sh
 
 The training process can be interrupted at any time, and the best checkpoint will always be saved.
 
-Generate (sample) some text from a trained model with the best result (Dropout 0.4) and output result in ./samples:(changed)
+Generate (sample) some text from a trained model with the best result (Dropout 0.4) and output result in ./samples: (changed)
 
     ./scripts/generate.sh
 
